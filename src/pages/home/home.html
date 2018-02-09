@@ -1,10 +1,16 @@
-<ion-header>
-  <ion-navbar>
+<script src="cordova.js"></script>
+
+<ion-header style="background-color: blue;">
+  <ion-navbar style="background-color: blue;">
+    <ion-icon name="arrow-round-back"></ion-icon>
+
+
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+
   <h2>Welcome to Ionic!</h2>
   <p>
     This starter project comes with simple tabs-based layout for apps
@@ -14,4 +20,80 @@
     Take a look at the <code>src/pages/</code> directory to add or change tabs,
     update any existing page or create new pages.
   </p>
+
 </ion-content>
+<ion-footer>
+
+<ion-grid>
+<ion-row>
+<ion-col col-4>
+<ion-item style="background-color:blue;">
+    <ion-label style="color:red; ">Notifications</ion-label>
+    <ion-select [(ngModel)]="notifications" interface="action-sheet" >
+      <ion-option value="enable">Enable</ion-option>
+      <ion-option value="mute">Mute</ion-option>
+      <ion-option value="mute_week">Mute for a week</ion-option>
+      <ion-option value="mute_year" (ionSelect)="notificationSelect($event)">Mute for a year</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-col>
+<ion-col col-4>
+<ion-item style="background-color:blue;">
+  <ion-label style="color:red; ">Notifications</ion-label>
+  <ion-select [(ngModel)]="notifications" interface="action-sheet" >
+    <ion-option value="enable">Enable</ion-option>
+    <ion-option value="mute">Mute</ion-option>
+    <ion-option value="mute_week">Mute for a week</ion-option>
+    <ion-option value="mute_year" (ionSelect)="notificationSelect($event)">Mute for a year</ion-option>
+  </ion-select>
+</ion-item>
+</ion-col>
+<ion-col col-4>
+  <ion-item style="background-color:blue;">
+    <ion-label style="color:red; ">Notifications</ion-label>
+    <ion-select [(ngModel)]="notifications" interface="action-sheet" >
+      <ion-option value="enable">Enable</ion-option>
+      <ion-option value="mute">Mute</ion-option>
+      <ion-option value="mute_week">Mute for a week</ion-option>
+      <ion-option value="mute_year" (ionSelect)="notificationSelect($event)">Mute for a year</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-col>
+</ion-row>
+</ion-grid>
+
+</ion-footer>
+<!-- <ion-footer style="background-color: black; ">
+  <ion-grid>
+  <ion-row>
+  <ion-col>
+  <ion-item style="background-color:black;width:'25%';">
+      <! <ion-label style="color:red; ">Notifications</ion-label>
+      <ion-select [(ngModel)]="notifications" interface="action-sheet" >
+        <ion-option value="enable">Enable</ion-option>
+        <ion-option value="mute">Mute</ion-option>
+        <ion-option value="mute_week">Mute for a week</ion-option>
+        <ion-option value="mute_year" (ionSelect)="notificationSelect($event)">Mute for a year</ion-option>
+      </ion-select> -->
+<!--
+      <button ion-button block (click)="openMenu()" style="background-color: black;">
+        Show Action Sheet
+      </button>
+    </ion-item>
+</ion-col>
+<ion-col>
+<ion-item style="background-color:black;width:20;">
+  <button ion-button block (click)="openMenu()" style="background-color: black;">
+    Show Action Sheet
+  </button>
+  </ion-item>
+</ion-col>
+<ion-col>
+  <button ion-button block (click)="openMenu()" style="background-color: black;">
+    Show Action Sheet
+  </button>
+</ion-col>
+</ion-row>
+</ion-grid>
+
+</ion-footer> --> -->
