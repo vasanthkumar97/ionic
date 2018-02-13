@@ -1,33 +1,60 @@
-// http://ionicframework.com/docs/theming/
-
-
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
+// // http://ionicframework.com/docs/theming/
 //
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
 //
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+// // App Global Sass
+// // --------------------------------------------------
+// // Put style rules here that you want to apply globally. These
+// // styles are for the entire app and not just one component.
+// // Additionally, this file can be also used as an entry point
+// // to import other Sass files to be included in the output CSS.
+// //
+// // Shared Sass variables, which can be used to adjust Ionic's
+// // default Sass variables, belong in "theme/variables.scss".
+// //
+// // To declare rules for a specific mode, create a child rule
+// // for the .md, .ios, or .wp mode classes. The mode class is
+// // automatically applied to the <body> element in the app.
+//
+.toolbar-background-md {
+  background-color: #273142;
 
-.toolbar-background-md{
-  background-color: blue,
 }
-.tabs-md .tabbar {
-    background: blue;
+
+.toolbar-content-md {
+  background-color: #273142;
+  flex-direction: row;
 }
-.tab-button-text {
+.menu-button {
+  background-color: #273142;
+  color:white;
+  height: 30px;
+}
+.title {
   color:white;
 }
-.toolbar-title-md {
-    padding: 0 12px;
-    padding-left: 30px;
-    font-size: 2rem;
-    font-weight: 500;
-    color: #424242;
+.tabs-md .tabbar {
+  background-color: #273142;
+ width: auto;}
+
+.tab-button-text {
+  color:white;
+  size: 16sp;
+  height: 18dp;
+  font-family: GEInspiraSans;
+  letter-spacing: 0.57;
 }
+// .toolbar-title-md {
+//     padding-left: 40px;
+//     font-size: 24;
+//     vertical-align:top;
+//     font-weight: 500;
+//     color: white;
+//     font-family: GEInspiraSans;
+//
+// }
+// .ion-md-notifications{
+//   color:white;
+//   margin-top: 20px;
+//   vertical-align:middle;
+//
+// }

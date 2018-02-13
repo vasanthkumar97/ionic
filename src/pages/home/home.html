@@ -1,66 +1,84 @@
 <script src="cordova.js"></script>
 
-<ion-header style="background-color: blue;">
-  <ion-navbar style="background-color: blue;">
-    <ion-icon name="arrow-round-back"></ion-icon>
-
-
-    <ion-title>Home</ion-title>
+<ion-header class="header">
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons left>
+      <button ion-button icon-only class="menu">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title class="page-title">
+      RIG 1
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only class="notifications">
+        <ion-icon name="notifications" ></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
 
+
+  <ion-item>
+    <ion-label><ion-icon name="calendar"></ion-icon></ion-label>
+
+
+      <ion-select [(ngModel)]="month">
+        <ion-option value="01" [selected]="true">January</ion-option>
+        <ion-option value="02" >February</ion-option>
+        <ion-option value="03">March</ion-option>
+        <ion-option value="04">April</ion-option>
+        <ion-option value="05">May</ion-option>
+        <ion-option value="06">June</ion-option>
+        <ion-option value="07">July</ion-option>
+        <ion-option value="08">August</ion-option>
+        <ion-option value="09">September</ion-option>
+        <ion-option value="10">October</ion-option>
+        <ion-option value="11">November</ion-option>
+        <ion-option value="12" checked="true">December</ion-option>
+      </ion-select>
+      <ion-select [(ngModel)]="day">
+        <ion-option value="01" [selected]="true">January</ion-option>
+        <ion-option value="02" >February</ion-option>
+        <ion-option value="03">March</ion-option>
+        <ion-option value="04">April</ion-option>
+        <ion-option value="05">May</ion-option>
+        <ion-option value="06">June</ion-option>
+        <ion-option value="07">July</ion-option>
+        <ion-option value="08">August</ion-option>
+        <ion-option value="09">September</ion-option>
+        <ion-option value="10">October</ion-option>
+        <ion-option value="11">November</ion-option>
+        <ion-option value="12" checked="true">December</ion-option>
+      </ion-select>
+
+      <ion-select [(ngModel)]="year">
+        <ion-option [selected]="true">1989</ion-option>
+        <ion-option>1990</ion-option>
+        <ion-option>1991</ion-option>
+        <ion-option>1992</ion-option>
+        <ion-option>1993</ion-option>
+        <ion-option checked="true">1994</ion-option>
+        <ion-option>1995</ion-option>
+        <ion-option>1996</ion-option>
+        <ion-option>1997</ion-option>
+        <ion-option>1998</ion-option>
+        <ion-option>1999</ion-option>
+      </ion-select>
+    </ion-item>
+  <!-- </ion-col>
+  </ion-row>
+  </ion-grid> -->
 </ion-content>
 <ion-footer>
 
-<ion-grid>
-<ion-row>
-<ion-col col-4>
-<ion-item style="background-color:blue;">
-    <ion-label style="color:red; ">Notifications</ion-label>
-    <ion-select [(ngModel)]="notifications" interface="action-sheet" >
-      <ion-option value="enable">Enable</ion-option>
-      <ion-option value="mute">Mute</ion-option>
-      <ion-option value="mute_week">Mute for a week</ion-option>
-      <ion-option value="mute_year" (ionSelect)="notificationSelect($event)">Mute for a year</ion-option>
-    </ion-select>
-  </ion-item>
-</ion-col>
-<ion-col col-4>
-<ion-item style="background-color:blue;">
-  <ion-label style="color:red; ">Notifications</ion-label>
-  <ion-select [(ngModel)]="notifications" interface="action-sheet" >
-    <ion-option value="enable">Enable</ion-option>
-    <ion-option value="mute">Mute</ion-option>
-    <ion-option value="mute_week">Mute for a week</ion-option>
-    <ion-option value="mute_year" (ionSelect)="notificationSelect($event)">Mute for a year</ion-option>
-  </ion-select>
-</ion-item>
-</ion-col>
-<ion-col col-4>
-  <ion-item style="background-color:blue;">
-    <ion-label style="color:red; ">Notifications</ion-label>
-    <ion-select [(ngModel)]="notifications" interface="action-sheet" >
-      <ion-option value="enable">Enable</ion-option>
-      <ion-option value="mute">Mute</ion-option>
-      <ion-option value="mute_week">Mute for a week</ion-option>
-      <ion-option value="mute_year" (ionSelect)="notificationSelect($event)">Mute for a year</ion-option>
-    </ion-select>
-  </ion-item>
-</ion-col>
-</ion-row>
-</ion-grid>
+
 
 </ion-footer>
 <!-- <ion-footer style="background-color: black; ">
