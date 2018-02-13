@@ -23,3 +23,10 @@ page-home {
 .page-title {
   padding-left: 10px;
 }
+#notifications-badge {
+          background-color: #ff8a7d;
+          position: absolute;
+          top: -3px;
+          right: -3px;
+          border-radius: 100%;
+      }

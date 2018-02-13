@@ -2,7 +2,6 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { SuperTabsModule } from '../../node_modules/ionic2-super-tabs/src';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -25,7 +24,6 @@ import { ScrollableTabs } from '../components/scrollable-tabs/scrollable-tabs';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    SuperTabsModule.forRoot(),
 
   ],
   bootstrap: [IonicApp],
