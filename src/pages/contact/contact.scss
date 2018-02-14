@@ -1,22 +1,35 @@
 page-contact {
 
 }
+.my-content {
+  margin-top:-50px;
+}
 #cd-timeline {
   position: relative;
   padding: 2em 0;
   margin-top: 2em;
   margin-bottom: 2em;
 }
+.arrow {
+color:#d8d8d8;
+width: 24px;
+height: 24px;
+margin-top:5.5px;
+margin-left:20.5%;
+font-size:2.2rem;
+
+}
 #cd-timeline::before {
   /* this is the vertical line */
   content: '';
   position: absolute;
-  top: 0;
+  top:40px;
   height: 100%;
-  width: 5px;
+  width: 1px;
   background: #d7e4ed;
-  left: 50%;
+  left: 22.5%;
   margin-left: -2px;
+  background-color:#d8d8d8;
 }
 .cd-container::after {
   content: '';
@@ -33,26 +46,29 @@ page-contact {
 }
 .cd-timeline-block {
   position: relative;
-      margin: 4em 0;
 }
 .cd-timeline-content {
   margin-left: 0;
   padding: 1.6em;
-  width: 42%;
+  width: 20.5%;
   position: relative;
   background: white;
   border-radius: 0.25em;
   padding: 1em;
   text-align: right;
+  vertical-align: top;
 }
 .cd-timeline-content .cd-date {
   position: absolute;
-  width: 100%;
-  left: 140%;
-  top: 15px;
+  width: 300%;
+  left: 130%;
+  top: 11px;
   font-size: 16px;
   font-size: 1rem;
   text-align:left;
+  color:#273142;
+
+
 }
 //.cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
   //left: auto;
@@ -75,16 +91,29 @@ page-contact {
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
 }
-.icon {
+.checkpoint {
   display: block;
 width: 24px;
 height: 24px;
 position: relative;
-left: 58%;
+left: -90%;
 top: 50%;
-margin-left: -12px;
-margin-top: -12px;
-vertical-align: middle;
+margin-left: -11px;
+margin-top: -18px;
+}
+.headers {
+font-family:GEInspiraSans;
+font-size:10px;
+margin-bottom:0px;
+color:black;
+}
+.content {
+font-family:GEInspiraSans;
+font-size:10px;
+margin-bottom:0px;
+color:#aeaeae;
+
+
 }
 .cd-timeline-img {
   position: absolute;
@@ -99,7 +128,6 @@ vertical-align: middle;
   top: 50%;
   margin-left: -12px;
   margin-top: -12px;
-  vertical-align: middle;
 }
 .cssanimations .cd-timeline-img.is-hidden,.cssanimations .cd-timeline-content.is-hidden {
   visibility: hidden;
