@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
 import { Platform, ActionSheetController } from 'ionic-angular';
 
 @Component({
@@ -9,7 +8,7 @@ import { Platform, ActionSheetController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController,private statusBar: StatusBar ,     public actionsheetCtrl: ActionSheetController,    public platform: Platform,
+  constructor(public navCtrl: NavController,    public actionsheetCtrl: ActionSheetController,    public platform: Platform,
 ) {
 
   }
