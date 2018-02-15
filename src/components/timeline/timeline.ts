@@ -17,6 +17,11 @@ export class TimelineComponent {
   constructor() {
     console.log('Hello TimelineComponent Component');
     this.text = 'Hello World';
+   @Input() date: string;
+  @Input() time: string;
+  @Input() event: string;
+
+
   }
 
 }

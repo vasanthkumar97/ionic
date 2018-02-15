@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ScrollableTabs } from '../components/scrollable-tabs/scrollable-tabs';
+import {TimelineComponent} from '../components/timeline/timeline';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ScrollableTabs } from '../components/scrollable-tabs/scrollable-tabs';
     HomePage,
     TabsPage,
 ScrollableTabs,
+TimelineComponent,
   ],
   imports: [
     BrowserModule,
