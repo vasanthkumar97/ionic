@@ -2,7 +2,13 @@ page-contact {
 
 }
 .my-content {
-  margin-top:-50px;
+  margin-top:-15%
+}
+.col {
+padding:0px;
+}
+.vl{
+border-left:6px solid-green;
 }
 #cd-timeline {
   position: relative;
@@ -15,7 +21,7 @@ color:#d8d8d8;
 width: 24px;
 height: 24px;
 margin-top:5.5px;
-margin-left:20.5%;
+margin-left:20.8%;
 font-size:2.2rem;
 
 }
@@ -28,7 +34,6 @@ font-size:2.2rem;
   width: 1px;
   background: #d7e4ed;
   left: 22.5%;
-  margin-left: -2px;
   background-color:#d8d8d8;
 }
 .cd-container::after {
@@ -148,4 +153,42 @@ color:#aeaeae;
   100% {
     transform: scale(1);
   }
+}
+/////////////////////
+.line {
+background-color:#d8d8d8;
+ width:1px;
+ margin-left:49%;
+ margin-top:-2px;
+ margin-bottom:0px;
+ height:45%
+}
+.my-col-1{
+align-content:center;text-align: center;padding:-2px;    margin: auto;
+
+    vertical-align: middle;  justify-content: center;  flex-direction:column;
+}
+.time {
+font-size:10;
+letter-spacing:0.28;
+color:#aeaeae;
+font-family:GEInspiraSans;
+
+}
+.date {
+font-size:10;
+letter-spacing:0.28;
+color:#000000;
+font-family:GEInspiraSans;
+}
+.event {
+font-size:10;
+letter-spacing:0.28;
+color:#273142;
+
+font-family:GEInspiraSans;
+}
+.check-point {
+height:10%;
+color:#d8d8d8;
 }
